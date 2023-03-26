@@ -97,6 +97,12 @@ chạy code và nhận được flag: ```ATTT{Meow_meow_meow_meow_tra_lai_tam_tr
 * Đề bài cho ta một file nén một núi file text, không thể kiểm tra bằng tay từng file nhỏ một sẽ rất lâu.
 * Biết form flag là ```ATTT{}``` nên ta sử dụng tính năng find của phần mềm giải nén Winrar
 
+![img](https://github.com/dnamgithub33/wu_svattt/blob/9c0ea5f2023f93f95b9ace2d7f6d33e2871f7004/img/for.PNG)
+
+và có flag: ```ATTT{https://www.youtube.com/watch?v=4qNALNWoGmI}```
+
+* Có một cách khác là dùng câu lệnh trong linux ```grep -rw "ATTT"``` có chức năng tương tự. 
+
 
 
 
