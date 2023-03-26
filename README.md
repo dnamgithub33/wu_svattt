@@ -64,9 +64,6 @@ int main() {
 
 * So sánh với dữ liệu trong ```bases.txt``` có 5 số đầu giống nhau ứng với ```ATTT{```. Viết code để giải mã theo quy tắc nêu trên:
 ```
-import struct
-import math
-
 def octToChar(octStr):
     intVal = int(octStr, 8)
     charVal = chr(intVal)
