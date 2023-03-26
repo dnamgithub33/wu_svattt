@@ -26,6 +26,43 @@ Flag:```ATTT{4_51mpl3_r3v_5ql}```.
 **Lưu ý:** _mỗi câu lệnh ở trên đều phải đảo ngược lại mới có thể truy xuất._ 
 
 # II. Crypto1
-* Đề bài cho ta 2 file 
+* Đề bài cho ta 2 file [bases.txt](https://github.com/dnamgithub33/wu_svattt/blob/fc717071cb839e8c3d7fae78a3ac43416e559ee3/img/bases.txt) và [enc.cpp](https://github.com/dnamgithub33/wu_svattt/blob/fc717071cb839e8c3d7fae78a3ac43416e559ee3/img/enc.cpp).
+
+* File bases.txt cho ta một dòng số:
+
+```101 84 54 84 173 77 65 111 167 95 6d 101 157 119 5f 109 145 111 77 95 155 101 6f 119 137 116 72 97 137 108 61 105 137 116 61 109 137 116 72 105 137 116 6f 105 137 100 61 121 175```
+
+* File enc.cpp cho ta một đoạn code đang mã hóa chuỗi ```ATTT{fake_flag}```.
+
+```
+#include <iostream>
+#include <string>
+using namespace std;
+
+#define EL printf("\n")
+
+string flag = "ATTT{fake_flag}";
+
+void bases(string &s) {
+    for (int i = 0; i < s.size(); i += 4)
+        printf("%o %u %x %u ", (unsigned char) s[i], (unsigned char) s[i + 1], (unsigned char) s[i + 2], (unsigned char) s[i + 3]);
+    EL;
+}
+
+int main() {
+    freopen("bases.txt", "w", stdout);
+    bases(flag);
+
+    return 0;
+}
+```
+
+    
+* Có thể thấy đoạn code này đang viết vào ```bases.txt``` nên để tránh dữ liệu bị sai lệch, ta tạm loại bỏ dòng ```freopen("bases.txt", "w", stdout);```, chạy code và nhận được kết quả:
+
+
+
+
+
 
 
