@@ -13,7 +13,7 @@ void bases(string &s) {
 }
 
 int main() {
-    //freopen("bases.txt", "w", stdout);
+    freopen("bases.txt", "w", stdout);
     bases(flag);
 
     return 0;
