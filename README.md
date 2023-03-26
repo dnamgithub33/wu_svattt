@@ -16,9 +16,11 @@
 
 ![img](https://github.com/dnamgithub33/wu_svattt/blob/04f497a7f1b4f03bd581bb728da75286bdc4e25f/img/flag.PNG)
 
-* Đã biết cột và bảng có thể chứa flag rồi ta dùng lệnh ```' UNION SELECT NULL,flag,NULL FROM flag-- -``` để truy xuất nội dung trong cột ```flag```
+* Đã biết cột và bảng có thể chứa flag rồi ta dùng lệnh ```' UNION SELECT NULL,flag,NULL FROM flag-- -``` để truy xuất nội dung trong cột ```flag``` và có flag
 
-!
+![img](https://github.com/dnamgithub33/wu_svattt/blob/62bce02ea70bb0607ff88cf6fb5113ac3f3d6616/img/final_flag.PNG)
+
+Flag:```ATTT{4_51mpl3_r3v_5ql}```
 
 
 
