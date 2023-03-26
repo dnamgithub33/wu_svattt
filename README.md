@@ -32,7 +32,7 @@ Flag:```ATTT{4_51mpl3_r3v_5ql}```.
 
 ```101 84 54 84 173 77 65 111 167 95 6d 101 157 119 5f 109 145 111 77 95 155 101 6f 119 137 116 72 97 137 108 61 105 137 116 61 109 137 116 72 105 137 116 6f 105 137 100 61 121 175```
 
-* File enc.cpp cho ta một đoạn code đang mã hóa chuỗi ```ATTT{fake_flag}```.
+* File enc.cpp cho ta một đoạn code đang mã hóa chuỗi ```ATTT{fake_flag}``` theo quy tắc _**vị trí ký tự chia 4 dư 0 thì mã hóa bằng hệ Octa, vị trí chia 4 dư 1 hoặc 3 thì mã hóa Decimal trong bảng mã ASCII và dư 2 thì mã hóa Hex**_.
 
 ```
 #include <iostream>
@@ -59,6 +59,44 @@ int main() {
 
     
 * Có thể thấy đoạn code này đang viết vào ```bases.txt``` nên để tránh dữ liệu bị sai lệch, ta tạm loại bỏ dòng ```freopen("bases.txt", "w", stdout);```, chạy code và nhận được kết quả:
+
+![img](https://github.com/dnamgithub33/wu_svattt/blob/b156b7d59bec96f88daec15c4e3624de03056dd5/img/crypt.PNG)
+
+* So sánh với dữ liệu trong ```bases.txt``` có 5 số đầu giống nhau ứng với ```ATTT{```. Viết code để giải mã theo quy tắc nêu trên:
+```
+import struct
+import math
+
+def octToChar(octStr):
+    intVal = int(octStr, 8)
+    charVal = chr(intVal)
+    return charVal
+
+def intToChar(intVal):
+    charVal=chr(intVal)
+    return charVal
+
+def hexToChar(hexStr):
+    intVal = int(hexStr, 16)
+    charVal = chr(intVal)
+    return charVal
+
+a = [] 
+with open('bases.txt', 'r') as file:
+    a = (file.read()).split()
+    for i in range(0,len(a)):
+        if i % 4 == 0:
+            print(octToChar(a[i]),end='')
+        if i % 4 == 1 or i % 4 == 3:
+            print(intToChar(int(a[i])),end='')
+        if i % 4 == 2:
+            print(hexToChar(a[i]),end='')
+```
+chạy code và nhận được flag: ```ATTT{Meow_meow_meow_meow_tra_lai_tam_tri_toi_day}```
+# III. For1
+* Đề bài cho ta một file nén một núi file text, không thể kiểm tra bằng tay từng file nhỏ một sẽ rất lâu.
+* Biết form flag là ```ATTT{}``` nên ta sử dụng tính năng find của phần mềm giải nén Winrar
+
 
 
 
